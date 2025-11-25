@@ -285,6 +285,7 @@ function renderDestinations(destinationsToRender) {
         return;
     }
 
+    // Render destination cards
     destinationsContainer.innerHTML = destinationsToRender
         .map(
             (dest) => `
@@ -307,11 +308,73 @@ function renderDestinations(destinationsToRender) {
     `
         )
         .join("");
+
+    // Render modals
+    renderModals(destinationsToRender);
 }
 
-// Generate star rating HTML
+// Render modals for destinations
+function renderModals(destinationsToRender) {
+    const modalsContainer = document.getElementById("modalsContainer");
+
+    modalsContainer.innerHTML = destinationsToRender
+        .map(
+            (dest) => `
+        <div class="modal fade" id="modal-${
+            dest.id
+        }" tabindex="-1" aria-labelledby="modal${
+                dest.id
+            }Label" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title" id="modal${dest.id}Label">${
+                dest.name
+            }</h1>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="${dest.image}" alt="${
+                dest.name
+            }" loading="lazy" />
+                        <div class="img_details">
+                            <h4>
+                                ${dest.title}
+                                <div class="star">
+                                    ${generateStarImages(dest.rating)}
+                                </div>
+                                <br />Package: ${dest.package}
+                            </h4>
+                            <h5>Address: ${dest.address}</h5>
+                            <p>${dest.description}</p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <label>
+                            <input type="checkbox" onclick="handleBooking()" aria-label="Agree to visit" />
+                            I agree to visit
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    `
+        )
+        .join("");
+}
+
+// Generate star rating HTML (text stars for cards)
 function generateStars(rating) {
     return "★".repeat(rating) + "☆".repeat(5 - rating);
+}
+
+// Generate star rating HTML (image stars for modals)
+function generateStarImages(rating) {
+    let stars = "";
+    for (let i = 0; i < rating; i++) {
+        stars += '<img src="https://i.ibb.co/SN5SJ8x/star.png" alt="star" />';
+    }
+    return stars;
 }
 
 // Handle booking confirmation

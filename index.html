@@ -1,622 +1,1402 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Explore the world's most beautiful destinations with our curated travel packages. Book your dream vacation today!"
+        />
+        <meta
+            name="keywords"
+            content="travel, tourism, vacation, destinations, world tour, beach, monuments, cities"
+        />
+        <title>World Tour - Explore Amazing Destinations</title>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>World Tour</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-</head>
+        <!-- Favicon -->
+        <link
+            rel="icon"
+            type="image/x-icon"
+            href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✈️</text></svg>"
+        />
 
-<body>
-    <div class="container-fluid">
-        <div class="container">
-            <div class="row">
-                <h1 style="text-align: center;">Let's Visit the World Together</h1>
+        <!-- Bootstrap 5 CSS -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+            crossorigin="anonymous"
+        />
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="./css/styles.css" />
+    </head>
+
+    <body>
+        <!-- Main Header -->
+        <header class="main-header">
+            <div class="container">
+                <h1>✈️ Let's Visit the World Together</h1>
+                <p>
+                    Discover amazing destinations and create unforgettable
+                    memories
+                </p>
             </div>
-            <div class="row">
-                <div class="col-sm-12 col-md-12 col-lg-4">
-                    <figure data-toggle="modal" data-target=".goa">
-                        <img src="./Images/wp3218381.jpg" alt="Goa Beach" height="250px" width="400px" >
-                        <figcaption >
-                            Goa Beach $1000
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="col-sm-12 col-md-12 col-lg-4">
-                    <figure data-toggle="modal" data-target=".maldives">
-                        <img src="https://wallpapercave.com/wp/3FUEZxE.jpg" alt="Maldives" height="250px" width="400px">
-                        <figcaption>
-                            Maldives $3000
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class=" col-sm-12 col-md-12 col-lg-4">
-                    <figure data-toggle="modal" data-target=".kerala">
-                        <img src="https://wallpapercave.com/wp/wp2783237.jpg" alt="Kerala" height="250px" width="400px">
-                        <figcaption>
-                            Kerala $1000
-                        </figcaption>
-                    </figure>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-12 col-md-12 col-lg-4">
-                    <figure data-toggle="modal" data-target=".taj">
-                        <img src="https://wallpapercave.com/wp/wp5835288.jpg" alt="Taj Mahal" height="250px"
-                            width="400px">
-                        <figcaption>
-                            Taj Mahal $500
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="col-sm-12 col-md-12 col-lg-4">
-                    <figure data-toggle="modal" data-target=".paris">
-                        <img src="https://wallpapercave.com/wp/8isL5w7.jpg" alt="Paris" height="250px" width="400px">
-                        <figcaption>
-                            Paris $5000
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="col-sm-12 col-md-12 col-lg-4">
-                    <figure data-toggle="modal" data-target=".london">
-                        <img src="https://wallpapercave.com/wp/SdQoS4D.jpg" alt="London" height="250px" width="400px">
-                        <figcaption>
-                            London $7000
-                        </figcaption>
-                    </figure>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-12 col-md-12 col-lg-4">
-                    <figure data-toggle="modal" data-target=".switzerland">
-                        <img src="https://wallpapercave.com/wp/Pt9XRvT.jpg" alt="Switzerland" height="250px"
-                            width="400px">
-                        <figcaption>
-                            Switzerland $10000
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="col-sm-12 col-md-12 col-lg-4">
-                    <figure data-toggle="modal" data-target=".Ladakh">
-                        <img src="https://wallpapercave.com/wp/wp4527557.jpg" alt="Ladakh" height="250px" width="400px">
-                        <figcaption>
-                            Ladakh $3000
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="col-sm-12 col-md-12 col-lg-4">
-                    <figure data-toggle="modal" data-target=".golden">
-                        <img src="https://wallpapercave.com/wp/wp1937540.jpg" alt="Goa Beach" height="250px"
-                            width="400px">
-                        <figcaption>
-                            Golden Temple $500
-                        </figcaption>
-                    </figure>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-12 col-md-12 col-lg-4">
-                    <figure data-toggle="modal" data-target=".india">
-                        <img src="https://wallpapercave.com/wp/wp1891562.jpg" alt="Goa Beach" height="250px"
-                            width="400px">
-                        <figcaption>
-                            India Gate $1000
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="col-sm-12 col-md-12 col-lg-4">
-                    <figure data-toggle="modal" data-target=".red">
-                        <img src="https://wallpapercave.com/wp/wp4109816.jpg" alt="Goa Beach" height="250px"
-                            width="400px">
-                        <figcaption>
-                            Red Fort $500
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="col-sm-12 col-md-12 col-lg-4">
-                    <figure data-toggle="modal" data-target=".agra">
-                        <img src="https://wallpapercave.com/wp/wp2675419.jpg" alt="Goa Beach" height="250px"
-                            width="400px">
-                        <figcaption>
-                            Agra Fort $500
-                        </figcaption>
-                    </figure>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-12 col-md-12 col-lg-4">
-                    <figure data-toggle="modal" data-target=".kolkata">
-                        <img src="https://wallpapercave.com/wp/wp4631452.jpg" alt="Goa Beach" height="250px"
-                            width="400px">
-                        <figcaption>
-                            Kolkata $2000
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="col-sm-12 col-md-12 col-lg-4">
-                    <figure data-toggle="modal" data-target=".statue">
-                        <img src="https://wallpapercave.com/wp/wp6587224.jpg" alt="Goa Beach" height="250px"
-                            width="400px">
-                        <figcaption>
-                            Statue of Unity $500
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="col-sm-12 col-md-12 col-lg-4">
-                    <figure data-toggle="modal" data-target=".Lakshadweep">
-                        <img src="https://wallpapercave.com/wp/wp9215244.jpg" alt="Lakshadweep" height="250px"
-                            width="400px">
-                        <figcaption>
-                            Lakshadweep $2000
-                        </figcaption>
-                    </figure>
-                </div>
+        </header>
+
+        <!-- Main Container -->
+        <div class="container-fluid">
+            <div class="container">
+                <!-- Search and Filter Section -->
+                <section class="search-filter-section">
+                    <div class="search-box">
+                        <input
+                            type="text"
+                            id="searchInput"
+                            placeholder="🔍 Search destinations, countries..."
+                            aria-label="Search destinations"
+                        />
+                    </div>
+                    <div class="filter-buttons">
+                        <button class="filter-btn active" data-filter="all">
+                            All Destinations
+                        </button>
+                        <button class="filter-btn" data-filter="beach">
+                            🏖️ Beaches
+                        </button>
+                        <button class="filter-btn" data-filter="monument">
+                            🏛️ Monuments
+                        </button>
+                        <button class="filter-btn" data-filter="city">
+                            🏙️ Cities
+                        </button>
+                        <button class="filter-btn" data-filter="nature">
+                            🏔️ Nature
+                        </button>
+                    </div>
+                </section>
+
+                <!-- Destinations Grid -->
+                <section class="destinations-grid" id="destinationsGrid">
+                    <!-- Destinations will be dynamically loaded here -->
+                    <div class="loading">Loading amazing destinations...</div>
+                </section>
             </div>
         </div>
-    </div>
 
-    <!-- Goa -->
-    <div class="modal fade goa" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
+        <!-- Modals for each destination -->
 
-                <h1 style="text-align: center;" >Goa Beach</h1>
-                <img src="./Images/wp3218381.jpg" alt="">
-                <div class="img_detils" style="text-align: center;">
-                    <h4>Colva Beach, Goa, India
-                        <div className="star">
-                            <img src="https://i.ibb.co/SN5SJ8x/star.png" />
-                            <img src="https://i.ibb.co/SN5SJ8x/star.png" />
-                            <img src="https://i.ibb.co/SN5SJ8x/star.png" />
-                            <img src="https://i.ibb.co/SN5SJ8x/star.png" />
-                            <img src="https://i.ibb.co/SN5SJ8x/star.png" />
+        <!-- Welcome/Landing Modal -->
+        <div
+            class="modal fade"
+            id="welcomeModal"
+            tabindex="-1"
+            aria-labelledby="welcomeModalLabel"
+            aria-hidden="true"
+            data-bs-backdrop="static"
+            data-bs-keyboard="false"
+        >
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1
+                            class="modal-title w-100 text-center"
+                            id="welcomeModalLabel"
+                        >
+                            ✈️ Welcome to World Tour
+                        </h1>
+                    </div>
+                    <div class="modal-body text-center">
+                        <div class="welcome-content">
+                            <img
+                                src="https://wallpapercave.com/wp/wp2783237.jpg"
+                                alt="Travel the World"
+                                style="
+                                    width: 100%;
+                                    max-height: 300px;
+                                    object-fit: cover;
+                                    border-radius: 12px;
+                                    margin-bottom: 20px;
+                                "
+                            />
+                            <h2
+                                style="
+                                    color: var(--primary-color);
+                                    margin-bottom: 15px;
+                                "
+                            >
+                                🌍 Discover Amazing Destinations
+                            </h2>
+                            <p
+                                style="
+                                    font-size: 1.1rem;
+                                    color: #555;
+                                    margin-bottom: 20px;
+                                "
+                            >
+                                Explore 15 handpicked destinations from around
+                                the world. From pristine beaches to historic
+                                monuments, from vibrant cities to breathtaking
+                                natural wonders.
+                            </p>
+                            <div
+                                style="
+                                    display: flex;
+                                    justify-content: space-around;
+                                    margin: 30px 0;
+                                    flex-wrap: wrap;
+                                    gap: 15px;
+                                "
+                            >
+                                <div style="flex: 1; min-width: 150px">
+                                    <div style="font-size: 2.5rem">🏖️</div>
+                                    <strong>Beaches</strong>
+                                    <p style="font-size: 0.9rem; color: #666">
+                                        Tropical Paradise
+                                    </p>
+                                </div>
+                                <div style="flex: 1; min-width: 150px">
+                                    <div style="font-size: 2.5rem">🏛️</div>
+                                    <strong>Monuments</strong>
+                                    <p style="font-size: 0.9rem; color: #666">
+                                        Historic Wonders
+                                    </p>
+                                </div>
+                                <div style="flex: 1; min-width: 150px">
+                                    <div style="font-size: 2.5rem">🏙️</div>
+                                    <strong>Cities</strong>
+                                    <p style="font-size: 0.9rem; color: #666">
+                                        Urban Adventures
+                                    </p>
+                                </div>
+                                <div style="flex: 1; min-width: 150px">
+                                    <div style="font-size: 2.5rem">🏔️</div>
+                                    <strong>Nature</strong>
+                                    <p style="font-size: 0.9rem; color: #666">
+                                        Natural Beauty
+                                    </p>
+                                </div>
+                            </div>
+                            <div
+                                style="
+                                    background: linear-gradient(
+                                        135deg,
+                                        #667eea 0%,
+                                        #764ba2 100%
+                                    );
+                                    padding: 20px;
+                                    border-radius: 12px;
+                                    color: white;
+                                    margin-top: 20px;
+                                "
+                            >
+                                <h3 style="margin-bottom: 10px">✨ Features</h3>
+                                <ul
+                                    style="
+                                        list-style: none;
+                                        padding: 0;
+                                        margin: 0;
+                                    "
+                                >
+                                    <li style="margin: 8px 0">
+                                        🔍 Real-time Search
+                                    </li>
+                                    <li style="margin: 8px 0">
+                                        🏷️ Category Filters
+                                    </li>
+                                    <li style="margin: 8px 0">
+                                        💰 Transparent Pricing
+                                    </li>
+                                    <li style="margin: 8px 0">
+                                        ⭐ Quality Ratings
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                        <br>Package: $1000 (1 day and 1 night)</h4>
-                    <h5>Address: Colva Beach, Goa, India
-                    </h5>
-                    <p>Located on the banks of Colva Beach, completely drunk over the glories of Goa, Beleza By The Beach Resort Goa is a perfect example of luxury with the comfort of nature. </p>
-                </div>
-                <div class="modal-footer">
-                    <input type="checkbox"
-                            title="Click To Visit" onclick="myFunction()"> I am agree to visit.
-                </div>
+                    </div>
+                    <div class="modal-footer justify-content-center">
+                        <button
+                            type="button"
+                            class="btn btn-primary btn-lg"
+                            data-bs-dismiss="modal"
+                            style="
+                                padding: 12px 40px;
+                                font-size: 1.1rem;
+                                background: linear-gradient(
+                                    135deg,
+                                    #667eea 0%,
+                                    #764ba2 100%
+                                );
+                                border: none;
+                            "
+                        >
+                            🚀 Start Exploring
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <!-- Maldives -->
-    <div class="modal fade maldives" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <h1 style="text-align: center;">Maldives</h1>
-                <img src="https://wallpapercave.com/wp/3FUEZxE.jpg" alt="">
-                <div class="img_detils" style="text-align: center;">
-                    <h4>Paradise Island Resort
-                        <div className="star">
-                            <img src="https://i.ibb.co/SN5SJ8x/star.png" />
-                            <img src="https://i.ibb.co/SN5SJ8x/star.png" />
-                            <img src="https://i.ibb.co/SN5SJ8x/star.png" />
-                            <img src="https://i.ibb.co/SN5SJ8x/star.png" />
+        <!-- Goa Beach Modal -->
+        <div
+            class="modal fade"
+            id="modal-goa"
+            tabindex="-1"
+            aria-labelledby="modalGoaLabel"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title" id="modalGoaLabel">
+                            Goa Beach
+                        </h1>
+                        <button
+                            type="button"
+                            class="btn-close btn-close-white"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                        ></button>
+                    </div>
+                    <div class="modal-body">
+                        <img
+                            src="./Images/wp3218381.jpg"
+                            alt="Goa Beach"
+                            loading="lazy"
+                        />
+                        <div class="img_details">
+                            <h4>
+                                Colva Beach, Goa, India
+                                <div class="star">
+                                    <img
+                                        src="https://i.ibb.co/SN5SJ8x/star.png"
+                                        alt="star"
+                                    />
+                                    <img
+                                        src="https://i.ibb.co/SN5SJ8x/star.png"
+                                        alt="star"
+                                    />
+                                    <img
+                                        src="https://i.ibb.co/SN5SJ8x/star.png"
+                                        alt="star"
+                                    />
+                                    <img
+                                        src="https://i.ibb.co/SN5SJ8x/star.png"
+                                        alt="star"
+                                    />
+                                    <img
+                                        src="https://i.ibb.co/SN5SJ8x/star.png"
+                                        alt="star"
+                                    />
+                                </div>
+                                <br />Package: $1000 (1 day and 1 night)
+                            </h4>
+                            <h5>Address: Colva Beach, Goa, India</h5>
+                            <p>
+                                Located on the banks of Colva Beach, completely
+                                drunk over the glories of Goa, Beleza By The
+                                Beach Resort Goa is a perfect example of luxury
+                                with the comfort of nature.
+                            </p>
                         </div>
-                        <br>Package: $3000 (1 day and 1 night)</h4>
-                    <h5>Paradise Island Resort & Spa Lankanfinolhu North, Maldives
-                    </h5>
-                    <p>Airy, upscale rooms set on the beach or over the lagoon, plus water sports, a spa & relaxed dining </p>
+                    </div>
+                    <div class="modal-footer">
+                        <label>
+                            <input
+                                type="checkbox"
+                                onclick="handleBooking()"
+                                aria-label="Agree to visit"
+                            />
+                            I agree to visit
+                        </label>
+                    </div>
                 </div>
-                <div class="modal-footer">
-                    <input type="checkbox"
-                            title="Click To Visit" onclick="myFunction()"> I am agree to visit.
-                </div>
-
             </div>
         </div>
-    </div>
 
-    <!-- Kerala -->
-    <div class="modal fade kerala" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <h1 style="text-align: center;">Kerala</h1>
-                <img src="https://wallpapercave.com/wp/wp2783237.jpg" alt="" height="500px">
-                <div class="img_detils" style="text-align: center;">
-                    <h4>Kerala, India
-                        <div className="star">
-                            <img src="https://i.ibb.co/SN5SJ8x/star.png" />
-                            <img src="https://i.ibb.co/SN5SJ8x/star.png" />
-                            <img src="https://i.ibb.co/SN5SJ8x/star.png" />
-                            <img src="https://i.ibb.co/SN5SJ8x/star.png" />
+        <!-- Maldives Modal -->
+        <div
+            class="modal fade"
+            id="modal-maldives"
+            tabindex="-1"
+            aria-labelledby="modalMaldivesLabel"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title" id="modalMaldivesLabel">
+                            Maldives
+                        </h1>
+                        <button
+                            type="button"
+                            class="btn-close btn-close-white"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                        ></button>
+                    </div>
+                    <div class="modal-body">
+                        <img
+                            src="https://wallpapercave.com/wp/3FUEZxE.jpg"
+                            alt="Maldives"
+                            loading="lazy"
+                        />
+                        <div class="img_details">
+                            <h4>
+                                Paradise Island Resort
+                                <div class="star">
+                                    <img
+                                        src="https://i.ibb.co/SN5SJ8x/star.png"
+                                        alt="star"
+                                    />
+                                    <img
+                                        src="https://i.ibb.co/SN5SJ8x/star.png"
+                                        alt="star"
+                                    />
+                                    <img
+                                        src="https://i.ibb.co/SN5SJ8x/star.png"
+                                        alt="star"
+                                    />
+                                    <img
+                                        src="https://i.ibb.co/SN5SJ8x/star.png"
+                                        alt="star"
+                                    />
+                                </div>
+                                <br />Package: $3000 (1 day and 1 night)
+                            </h4>
+                            <h5>
+                                Paradise Island Resort & Spa Lankanfinolhu
+                                North, Maldives
+                            </h5>
+                            <p>
+                                Airy, upscale rooms set on the beach or over the
+                                lagoon, plus water sports, a spa & relaxed
+                                dining.
+                            </p>
                         </div>
-                        <br>Package: $1000 (1 day and 1 night)</h4>
-                    <h5>Address: Dam on the Periyar River, Idukki, Kerala, India
-                    </h5>
-                    <p>Kerala, a state on India's tropical Malabar Coast, has nearly 600km of Arabian Sea shoreline. </p>
-                </div>
-                <div class="modal-footer">
-                    <input type="checkbox"
-                            title="Click To Visit" onclick="myFunction()"> I am agree to visit.
+                    </div>
+                    <div class="modal-footer">
+                        <label>
+                            <input
+                                type="checkbox"
+                                onclick="handleBooking()"
+                                aria-label="Agree to visit"
+                            />
+                            I agree to visit
+                        </label>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <!-- Taj Mahal -->
-    <div class="modal fade taj" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <h1 style="text-align: center;">Taj Mahal</h1>
-                <img src="https://wallpapercave.com/wp/wp5835288.jpg" alt="" height="500px">
-                <div class="img_detils" style="text-align: center;">
-                    <h4>Taj Mahal
-                        <div className="star">
-                            <img src="https://i.ibb.co/SN5SJ8x/star.png" />
-                            <img src="https://i.ibb.co/SN5SJ8x/star.png" />
-                            <img src="https://i.ibb.co/SN5SJ8x/star.png" />
-                            <img src="https://i.ibb.co/SN5SJ8x/star.png" />
-                            <img src="https://i.ibb.co/SN5SJ8x/star.png" />
+        <!-- Kerala Modal -->
+        <div
+            class="modal fade"
+            id="modal-kerala"
+            tabindex="-1"
+            aria-labelledby="modalKeralaLabel"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title" id="modalKeralaLabel">
+                            Kerala
+                        </h1>
+                        <button
+                            type="button"
+                            class="btn-close btn-close-white"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                        ></button>
+                    </div>
+                    <div class="modal-body">
+                        <img
+                            src="https://wallpapercave.com/wp/wp2783237.jpg"
+                            alt="Kerala"
+                            loading="lazy"
+                        />
+                        <div class="img_details">
+                            <h4>
+                                Kerala, India
+                                <div class="star">
+                                    <img
+                                        src="https://i.ibb.co/SN5SJ8x/star.png"
+                                        alt="star"
+                                    />
+                                    <img
+                                        src="https://i.ibb.co/SN5SJ8x/star.png"
+                                        alt="star"
+                                    />
+                                    <img
+                                        src="https://i.ibb.co/SN5SJ8x/star.png"
+                                        alt="star"
+                                    />
+                                    <img
+                                        src="https://i.ibb.co/SN5SJ8x/star.png"
+                                        alt="star"
+                                    />
+                                </div>
+                                <br />Package: $1000 (1 day and 1 night)
+                            </h4>
+                            <h5>
+                                Dam on the Periyar River, Idukki, Kerala, India
+                            </h5>
+                            <p>
+                                Kerala, a state on India's tropical Malabar
+                                Coast, has nearly 600km of Arabian Sea
+                                shoreline.
+                            </p>
                         </div>
-                        <br>Package: $500 (1 day and 1 night)</h4>
-                    <h5>Address: Agra, Uttar Pradesh, India
-                    </h5>
-                    <p>The Taj Mahal, originally the Rauza-i-munawwara is an ivory-white marble mausoleum on the southern bank of the river Yamuna in the Indian city of Agra. It was commissioned in 1632 by the Mughal emperor Shah Jahan to house the tomb of his favourite wife, Mumtaz Mahal </p>
+                    </div>
+                    <div class="modal-footer">
+                        <label>
+                            <input
+                                type="checkbox"
+                                onclick="handleBooking()"
+                                aria-label="Agree to visit"
+                            />
+                            I agree to visit
+                        </label>
+                    </div>
                 </div>
-                <div class="modal-footer">
-                    <input type="checkbox"
-                            title="Click To Visit" onclick="myFunction()"> I am agree to visit.
-                </div>
-
             </div>
         </div>
-    </div>
 
-    <!-- Paris -->
-    <div class="modal fade paris" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <h1 style="text-align: center;">Paris</h1>
-                <img src="https://wallpapercave.com/wp/8isL5w7.jpg" alt="">
-                <div class="img_detils" style="text-align: center;">
-                    <h4>Paris
-                        <div className="star">
-                            <img src="https://i.ibb.co/SN5SJ8x/star.png" />
-                            <img src="https://i.ibb.co/SN5SJ8x/star.png" />
-                            <img src="https://i.ibb.co/SN5SJ8x/star.png" />
-                            <img src="https://i.ibb.co/SN5SJ8x/star.png" />
-                            <img src="https://i.ibb.co/SN5SJ8x/star.png" />
+        <!-- Taj Mahal Modal -->
+        <div
+            class="modal fade"
+            id="modal-taj"
+            tabindex="-1"
+            aria-labelledby="modalTajLabel"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title" id="modalTajLabel">
+                            Taj Mahal
+                        </h1>
+                        <button
+                            type="button"
+                            class="btn-close btn-close-white"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                        ></button>
+                    </div>
+                    <div class="modal-body">
+                        <img
+                            src="https://wallpapercave.com/wp/wp5835288.jpg"
+                            alt="Taj Mahal"
+                            loading="lazy"
+                        />
+                        <div class="img_details">
+                            <h4>
+                                Taj Mahal
+                                <div class="star">
+                                    <img
+                                        src="https://i.ibb.co/SN5SJ8x/star.png"
+                                        alt="star"
+                                    />
+                                    <img
+                                        src="https://i.ibb.co/SN5SJ8x/star.png"
+                                        alt="star"
+                                    />
+                                    <img
+                                        src="https://i.ibb.co/SN5SJ8x/star.png"
+                                        alt="star"
+                                    />
+                                    <img
+                                        src="https://i.ibb.co/SN5SJ8x/star.png"
+                                        alt="star"
+                                    />
+                                    <img
+                                        src="https://i.ibb.co/SN5SJ8x/star.png"
+                                        alt="star"
+                                    />
+                                </div>
+                                <br />Package: $500 (1 day and 1 night)
+                            </h4>
+                            <h5>Agra, Uttar Pradesh, India</h5>
+                            <p>
+                                The Taj Mahal is an ivory-white marble mausoleum
+                                on the southern bank of the river Yamuna in the
+                                Indian city of Agra. It was commissioned in 1632
+                                by the Mughal emperor Shah Jahan to house the
+                                tomb of his favourite wife, Mumtaz Mahal.
+                            </p>
                         </div>
-                        <br>Package: $5000 (1 day and 1 night)</h4>
-                    <h5>Address: Paris, France
-                    </h5>
-                    <p>Paris, France's capital, is a major European city and a global center for art, fashion, gastronomy and culture. Its 19th-century cityscape is crisscrossed by wide boulevards and the River Seine. </p>
+                    </div>
+                    <div class="modal-footer">
+                        <label>
+                            <input
+                                type="checkbox"
+                                onclick="handleBooking()"
+                                aria-label="Agree to visit"
+                            />
+                            I agree to visit
+                        </label>
+                    </div>
                 </div>
-                <div class="modal-footer">
-                    <input type="checkbox"
-                            title="Click To Visit" onclick="myFunction()"> I am agree to visit.
-                </div>
-
             </div>
         </div>
-    </div>
 
-    <!-- London -->
-    <div class="modal fade london" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <h1 style="text-align: center;">London</h1>
-                <img src="https://wallpapercave.com/wp/SdQoS4D.jpg" alt="">
-                <div class="img_detils" style="text-align: center;">
-                    <h4>London
-                        <div className="star">
-                            <img src="https://i.ibb.co/SN5SJ8x/star.png" />
-                            <img src="https://i.ibb.co/SN5SJ8x/star.png" />
-                            <img src="https://i.ibb.co/SN5SJ8x/star.png" />
-                            <img src="https://i.ibb.co/SN5SJ8x/star.png" />
+        <!-- Paris Modal -->
+        <div
+            class="modal fade"
+            id="modal-paris"
+            tabindex="-1"
+            aria-labelledby="modalParisLabel"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title" id="modalParisLabel">Paris</h1>
+                        <button
+                            type="button"
+                            class="btn-close btn-close-white"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                        ></button>
+                    </div>
+                    <div class="modal-body">
+                        <img
+                            src="https://wallpapercave.com/wp/8isL5w7.jpg"
+                            alt="Paris"
+                            loading="lazy"
+                        />
+                        <div class="img_details">
+                            <h4>
+                                Paris
+                                <div class="star">
+                                    <img
+                                        src="https://i.ibb.co/SN5SJ8x/star.png"
+                                        alt="star"
+                                    />
+                                    <img
+                                        src="https://i.ibb.co/SN5SJ8x/star.png"
+                                        alt="star"
+                                    />
+                                    <img
+                                        src="https://i.ibb.co/SN5SJ8x/star.png"
+                                        alt="star"
+                                    />
+                                    <img
+                                        src="https://i.ibb.co/SN5SJ8x/star.png"
+                                        alt="star"
+                                    />
+                                    <img
+                                        src="https://i.ibb.co/SN5SJ8x/star.png"
+                                        alt="star"
+                                    />
+                                </div>
+                                <br />Package: $5000 (1 day and 1 night)
+                            </h4>
+                            <h5>Paris, France</h5>
+                            <p>
+                                Paris, France's capital, is a major European
+                                city and a global center for art, fashion,
+                                gastronomy and culture. Its 19th-century
+                                cityscape is crisscrossed by wide boulevards and
+                                the River Seine.
+                            </p>
                         </div>
-                        <br>Package: $7000 (1 day and 1 night)</h4>
-                    <h5>Address: London, United Kingdom
-                    </h5>
-                    <p>London, the capital of England and the United Kingdom, is a 21st-century city with history stretching back to Roman times.  </p>
+                    </div>
+                    <div class="modal-footer">
+                        <label>
+                            <input
+                                type="checkbox"
+                                onclick="handleBooking()"
+                                aria-label="Agree to visit"
+                            />
+                            I agree to visit
+                        </label>
+                    </div>
                 </div>
-                <div class="modal-footer">
-                    <input type="checkbox"
-                            title="Click To Visit" onclick="myFunction()"> I am agree to visit.
-                </div>
-
             </div>
         </div>
-    </div>
 
-    <!-- Switzerland -->
-    <div class="modal fade switzerland" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <h1 style="text-align: center;">Switzerland</h1>
-                <img src="https://wallpapercave.com/wp/Pt9XRvT.jpg" alt="">
-                <div class="img_detils" style="text-align: center;">
-                    <h4>Jungfrau, Switzerland
-                        <div className="star">
-                            <img src="https://i.ibb.co/SN5SJ8x/star.png" />
-                            <img src="https://i.ibb.co/SN5SJ8x/star.png" />
-                            <img src="https://i.ibb.co/SN5SJ8x/star.png" />
-                            <img src="https://i.ibb.co/SN5SJ8x/star.png" />
-                            <img src="https://i.ibb.co/SN5SJ8x/star.png" />
+        <!-- London Modal -->
+        <div
+            class="modal fade"
+            id="modal-london"
+            tabindex="-1"
+            aria-labelledby="modalLondonLabel"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title" id="modalLondonLabel">
+                            London
+                        </h1>
+                        <button
+                            type="button"
+                            class="btn-close btn-close-white"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                        ></button>
+                    </div>
+                    <div class="modal-body">
+                        <img
+                            src="https://wallpapercave.com/wp/SdQoS4D.jpg"
+                            alt="London"
+                            loading="lazy"
+                        />
+                        <div class="img_details">
+                            <h4>
+                                London
+                                <div class="star">
+                                    <img
+                                        src="https://i.ibb.co/SN5SJ8x/star.png"
+                                        alt="star"
+                                    />
+                                    <img
+                                        src="https://i.ibb.co/SN5SJ8x/star.png"
+                                        alt="star"
+                                    />
+                                    <img
+                                        src="https://i.ibb.co/SN5SJ8x/star.png"
+                                        alt="star"
+                                    />
+                                    <img
+                                        src="https://i.ibb.co/SN5SJ8x/star.png"
+                                        alt="star"
+                                    />
+                                </div>
+                                <br />Package: $7000 (1 day and 1 night)
+                            </h4>
+                            <h5>London, United Kingdom</h5>
+                            <p>
+                                London, the capital of England and the United
+                                Kingdom, is a 21st-century city with history
+                                stretching back to Roman times.
+                            </p>
                         </div>
-                        <br>Package: $10000 (1 day and 1 night)</h4>
-                    <h5>Address: Jungfrau, Switzerland
-                    </h5>
-                    <p>The Jungfrau, at 4,158 meters is one of the main summits of the Bernese Alps, located between the northern canton of Bern and the southern canton of Valais, halfway between Interlaken and Fiesch. </p>
-                </div>
-                <div class="modal-footer">
-                    <input type="checkbox"
-                            title="Click To Visit" onclick="myFunction()"> I am agree to visit.
+                    </div>
+                    <div class="modal-footer">
+                        <label>
+                            <input
+                                type="checkbox"
+                                onclick="handleBooking()"
+                                aria-label="Agree to visit"
+                            />
+                            I agree to visit
+                        </label>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <!-- Ladakh -->
-    <div class="modal fade Ladakh" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <h1 style="text-align: center;">Ladakh</h1>
-                <img src="https://wallpapercave.com/wp/wp4527557.jpg" alt="">
-                <div class="img_detils" style="text-align: center;">
-                    <h4>Colva Beach, Goa, India
-                        <div className="star">
-                            <img src="https://i.ibb.co/SN5SJ8x/star.png" />
-                            <img src="https://i.ibb.co/SN5SJ8x/star.png" />
-                            <img src="https://i.ibb.co/SN5SJ8x/star.png" />
-                            <img src="https://i.ibb.co/SN5SJ8x/star.png" />
-                            <img src="https://i.ibb.co/SN5SJ8x/star.png" />
+        <!-- Switzerland Modal -->
+        <div
+            class="modal fade"
+            id="modal-switzerland"
+            tabindex="-1"
+            aria-labelledby="modalSwitzerlandLabel"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title" id="modalSwitzerlandLabel">
+                            Switzerland
+                        </h1>
+                        <button
+                            type="button"
+                            class="btn-close btn-close-white"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                        ></button>
+                    </div>
+                    <div class="modal-body">
+                        <img
+                            src="https://wallpapercave.com/wp/Pt9XRvT.jpg"
+                            alt="Switzerland"
+                            loading="lazy"
+                        />
+                        <div class="img_details">
+                            <h4>
+                                Jungfrau, Switzerland
+                                <div class="star">
+                                    <img
+                                        src="https://i.ibb.co/SN5SJ8x/star.png"
+                                        alt="star"
+                                    />
+                                    <img
+                                        src="https://i.ibb.co/SN5SJ8x/star.png"
+                                        alt="star"
+                                    />
+                                    <img
+                                        src="https://i.ibb.co/SN5SJ8x/star.png"
+                                        alt="star"
+                                    />
+                                    <img
+                                        src="https://i.ibb.co/SN5SJ8x/star.png"
+                                        alt="star"
+                                    />
+                                    <img
+                                        src="https://i.ibb.co/SN5SJ8x/star.png"
+                                        alt="star"
+                                    />
+                                </div>
+                                <br />Package: $10000 (1 day and 1 night)
+                            </h4>
+                            <h5>Jungfrau, Switzerland</h5>
+                            <p>
+                                The Jungfrau, at 4,158 meters is one of the main
+                                summits of the Bernese Alps, located between the
+                                northern canton of Bern and the southern canton
+                                of Valais, halfway between Interlaken and
+                                Fiesch.
+                            </p>
                         </div>
-                        <br>Package: $1000 (1 day and 1 night)</h4>
-                    <h5>Address: Colva Beach, Goa, India
-                    </h5>
-                    <p>Located on the banks of Colva Beach, completely drunk over the glories of Goa, Beleza By The Beach Resort Goa is a perfect example of luxury with the comfort of nature. </p>
+                    </div>
+                    <div class="modal-footer">
+                        <label>
+                            <input
+                                type="checkbox"
+                                onclick="handleBooking()"
+                                aria-label="Agree to visit"
+                            />
+                            I agree to visit
+                        </label>
+                    </div>
                 </div>
-                <div class="modal-footer">
-                    <input type="checkbox"
-                            title="Click To Visit" onclick="myFunction()"> I am agree to visit.
-                </div>
-
             </div>
         </div>
-    </div>
 
-    <!-- Golden Temple -->
-    <div class="modal fade golden" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <h1 style="text-align: center;">Golden Temple</h1>
-                <img src="https://wallpapercave.com/wp/wp1937540.jpg" alt="">
-                <div class="img_detils" style="text-align: center;">
-                    <h4>Colva Beach, Goa, India
-                        <div className="star">
-                            <img src="https://i.ibb.co/SN5SJ8x/star.png" />
-                            <img src="https://i.ibb.co/SN5SJ8x/star.png" />
-                            <img src="https://i.ibb.co/SN5SJ8x/star.png" />
-                            <img src="https://i.ibb.co/SN5SJ8x/star.png" />
-                            <img src="https://i.ibb.co/SN5SJ8x/star.png" />
+        <!-- Ladakh Modal -->
+        <div
+            class="modal fade"
+            id="modal-ladakh"
+            tabindex="-1"
+            aria-labelledby="modalLadakhLabel"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title" id="modalLadakhLabel">
+                            Ladakh
+                        </h1>
+                        <button
+                            type="button"
+                            class="btn-close btn-close-white"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                        ></button>
+                    </div>
+                    <div class="modal-body">
+                        <img
+                            src="https://wallpapercave.com/wp/wp4527557.jpg"
+                            alt="Ladakh"
+                            loading="lazy"
+                        />
+                        <div class="img_details">
+                            <h4>
+                                Ladakh, India
+                                <div class="star">
+                                    <img
+                                        src="https://i.ibb.co/SN5SJ8x/star.png"
+                                        alt="star"
+                                    />
+                                    <img
+                                        src="https://i.ibb.co/SN5SJ8x/star.png"
+                                        alt="star"
+                                    />
+                                    <img
+                                        src="https://i.ibb.co/SN5SJ8x/star.png"
+                                        alt="star"
+                                    />
+                                    <img
+                                        src="https://i.ibb.co/SN5SJ8x/star.png"
+                                        alt="star"
+                                    />
+                                    <img
+                                        src="https://i.ibb.co/SN5SJ8x/star.png"
+                                        alt="star"
+                                    />
+                                </div>
+                                <br />Package: $3000 (1 day and 1 night)
+                            </h4>
+                            <h5>Ladakh, Jammu and Kashmir, India</h5>
+                            <p>
+                                Ladakh is a region in northern India known for
+                                its remote mountain beauty and Buddhist culture.
+                                The region is home to dramatic landscapes,
+                                ancient monasteries, and unique wildlife.
+                            </p>
                         </div>
-                        <br>Package: $1000 (1 day and 1 night)</h4>
-                    <h5>Address: Colva Beach, Goa, India
-                    </h5>
-                    <p>Located on the banks of Colva Beach, completely drunk over the glories of Goa, Beleza By The Beach Resort Goa is a perfect example of luxury with the comfort of nature. </p>
+                    </div>
+                    <div class="modal-footer">
+                        <label>
+                            <input
+                                type="checkbox"
+                                onclick="handleBooking()"
+                                aria-label="Agree to visit"
+                            />
+                            I agree to visit
+                        </label>
+                    </div>
                 </div>
-                <div class="modal-footer">
-                    <input type="checkbox"
-                            title="Click To Visit" onclick="myFunction()"> I am agree to visit.
-                </div>
-                </div>
-
             </div>
         </div>
-    </div>
 
-    <!-- India Gate -->
-    <div class="modal fade india" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <h1 style="text-align: center;">India Gate</h1>
-                <img src="https://wallpapercave.com/wp/wp1891562.jpg" alt="">
-                <div class="img_detils" style="text-align: center;">
-                    <h4>Colva Beach, Goa, India
-                        <div className="star">
-                            <img src="https://i.ibb.co/SN5SJ8x/star.png" />
-                            <img src="https://i.ibb.co/SN5SJ8x/star.png" />
-                            <img src="https://i.ibb.co/SN5SJ8x/star.png" />
-                            <img src="https://i.ibb.co/SN5SJ8x/star.png" />
-                            <img src="https://i.ibb.co/SN5SJ8x/star.png" />
+        <!-- Golden Temple Modal -->
+        <div
+            class="modal fade"
+            id="modal-golden"
+            tabindex="-1"
+            aria-labelledby="modalGoldenLabel"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title" id="modalGoldenLabel">
+                            Golden Temple
+                        </h1>
+                        <button
+                            type="button"
+                            class="btn-close btn-close-white"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                        ></button>
+                    </div>
+                    <div class="modal-body">
+                        <img
+                            src="https://wallpapercave.com/wp/wp1937540.jpg"
+                            alt="Golden Temple"
+                            loading="lazy"
+                        />
+                        <div class="img_details">
+                            <h4>
+                                Golden Temple
+                                <div class="star">
+                                    <img
+                                        src="https://i.ibb.co/SN5SJ8x/star.png"
+                                        alt="star"
+                                    />
+                                    <img
+                                        src="https://i.ibb.co/SN5SJ8x/star.png"
+                                        alt="star"
+                                    />
+                                    <img
+                                        src="https://i.ibb.co/SN5SJ8x/star.png"
+                                        alt="star"
+                                    />
+                                    <img
+                                        src="https://i.ibb.co/SN5SJ8x/star.png"
+                                        alt="star"
+                                    />
+                                    <img
+                                        src="https://i.ibb.co/SN5SJ8x/star.png"
+                                        alt="star"
+                                    />
+                                </div>
+                                <br />Package: $500 (1 day and 1 night)
+                            </h4>
+                            <h5>Amritsar, Punjab, India</h5>
+                            <p>
+                                The Golden Temple, also known as Harmandir
+                                Sahib, is a Sikh gurdwara located in the city of
+                                Amritsar, Punjab, India. It is the holiest
+                                Gurdwara and the most important pilgrimage site
+                                of Sikhism.
+                            </p>
                         </div>
-                        <br>Package: $1000 (1 day and 1 night)</h4>
-                    <h5>Address: Colva Beach, Goa, India
-                    </h5>
-                    <p>Located on the banks of Colva Beach, completely drunk over the glories of Goa, Beleza By The Beach Resort Goa is a perfect example of luxury with the comfort of nature. </p>
+                    </div>
+                    <div class="modal-footer">
+                        <label>
+                            <input
+                                type="checkbox"
+                                onclick="handleBooking()"
+                                aria-label="Agree to visit"
+                            />
+                            I agree to visit
+                        </label>
+                    </div>
                 </div>
-                <div class="modal-footer">
-                    <input type="checkbox"
-                            title="Click To Visit" onclick="myFunction()"> I am agree to visit.
-                </div>
-
             </div>
         </div>
-    </div>
 
-    <!-- Red Fort -->
-    <div class="modal fade red" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <h1 style="text-align: center;">Red Fort</h1>
-                <img src="https://wallpapercave.com/wp/wp4109816.jpg" alt="">
-                <div class="img_detils" style="text-align: center;">
-                    <h4>Colva Beach, Goa, India
-                        <div className="star">
-                            <img src="https://i.ibb.co/SN5SJ8x/star.png" />
-                            <img src="https://i.ibb.co/SN5SJ8x/star.png" />
-                            <img src="https://i.ibb.co/SN5SJ8x/star.png" />
-                            <img src="https://i.ibb.co/SN5SJ8x/star.png" />
-                            <img src="https://i.ibb.co/SN5SJ8x/star.png" />
+        <!-- India Gate Modal -->
+        <div
+            class="modal fade"
+            id="modal-india"
+            tabindex="-1"
+            aria-labelledby="modalIndiaLabel"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title" id="modalIndiaLabel">
+                            India Gate
+                        </h1>
+                        <button
+                            type="button"
+                            class="btn-close btn-close-white"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                        ></button>
+                    </div>
+                    <div class="modal-body">
+                        <img
+                            src="https://wallpapercave.com/wp/wp1891562.jpg"
+                            alt="India Gate"
+                            loading="lazy"
+                        />
+                        <div class="img_details">
+                            <h4>
+                                India Gate
+                                <div class="star">
+                                    <img
+                                        src="https://i.ibb.co/SN5SJ8x/star.png"
+                                        alt="star"
+                                    />
+                                    <img
+                                        src="https://i.ibb.co/SN5SJ8x/star.png"
+                                        alt="star"
+                                    />
+                                    <img
+                                        src="https://i.ibb.co/SN5SJ8x/star.png"
+                                        alt="star"
+                                    />
+                                    <img
+                                        src="https://i.ibb.co/SN5SJ8x/star.png"
+                                        alt="star"
+                                    />
+                                    <img
+                                        src="https://i.ibb.co/SN5SJ8x/star.png"
+                                        alt="star"
+                                    />
+                                </div>
+                                <br />Package: $1000 (1 day and 1 night)
+                            </h4>
+                            <h5>New Delhi, India</h5>
+                            <p>
+                                The India Gate is a war memorial located in New
+                                Delhi, India. It was designed by Sir Edwin
+                                Lutyens and stands as a memorial to 70,000
+                                soldiers of the British Indian Army who died in
+                                World War I.
+                            </p>
                         </div>
-                        <br>Package: $1000 (1 day and 1 night)</h4>
-                    <h5>Address: Colva Beach, Goa, India
-                    </h5>
-                    <p>Located on the banks of Colva Beach, completely drunk over the glories of Goa, Beleza By The Beach Resort Goa is a perfect example of luxury with the comfort of nature. </p>
+                    </div>
+                    <div class="modal-footer">
+                        <label>
+                            <input
+                                type="checkbox"
+                                onclick="handleBooking()"
+                                aria-label="Agree to visit"
+                            />
+                            I agree to visit
+                        </label>
+                    </div>
                 </div>
-                <div class="modal-footer">
-                    <input type="checkbox"
-                            title="Click To Visit" onclick="myFunction()"> I am agree to visit.
-                </div>
-
             </div>
         </div>
-    </div>
 
-    <!-- Agra Fort -->
-    <div class="modal fade agra" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <h1 style="text-align: center;">Agra Fort</h1>
-                <img src="https://wallpapercave.com/wp/wp2675419.jpg" alt="">
-                <div class="img_detils" style="text-align: center;">
-                    <h4>Colva Beach, Goa, India
-                        <div className="star">
-                            <img src="https://i.ibb.co/SN5SJ8x/star.png" />
-                            <img src="https://i.ibb.co/SN5SJ8x/star.png" />
-                            <img src="https://i.ibb.co/SN5SJ8x/star.png" />
-                            <img src="https://i.ibb.co/SN5SJ8x/star.png" />
-                            <img src="https://i.ibb.co/SN5SJ8x/star.png" />
+        <!-- Red Fort Modal -->
+        <div
+            class="modal fade"
+            id="modal-red"
+            tabindex="-1"
+            aria-labelledby="modalRedLabel"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title" id="modalRedLabel">Red Fort</h1>
+                        <button
+                            type="button"
+                            class="btn-close btn-close-white"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                        ></button>
+                    </div>
+                    <div class="modal-body">
+                        <img
+                            src="https://wallpapercave.com/wp/wp4109816.jpg"
+                            alt="Red Fort"
+                            loading="lazy"
+                        />
+                        <div class="img_details">
+                            <h4>
+                                Red Fort
+                                <div class="star">
+                                    <img
+                                        src="https://i.ibb.co/SN5SJ8x/star.png"
+                                        alt="star"
+                                    />
+                                    <img
+                                        src="https://i.ibb.co/SN5SJ8x/star.png"
+                                        alt="star"
+                                    />
+                                    <img
+                                        src="https://i.ibb.co/SN5SJ8x/star.png"
+                                        alt="star"
+                                    />
+                                    <img
+                                        src="https://i.ibb.co/SN5SJ8x/star.png"
+                                        alt="star"
+                                    />
+                                    <img
+                                        src="https://i.ibb.co/SN5SJ8x/star.png"
+                                        alt="star"
+                                    />
+                                </div>
+                                <br />Package: $500 (1 day and 1 night)
+                            </h4>
+                            <h5>Old Delhi, India</h5>
+                            <p>
+                                The Red Fort is a historic fort in the city of
+                                Delhi that served as the main residence of the
+                                Mughal Emperors. It was constructed in 1639 by
+                                the fifth Mughal Emperor Shah Jahan.
+                            </p>
                         </div>
-                        <br>Package: $1000 (1 day and 1 night)</h4>
-                    <h5>Address: Colva Beach, Goa, India
-                    </h5>
-                    <p>Located on the banks of Colva Beach, completely drunk over the glories of Goa, Beleza By The Beach Resort Goa is a perfect example of luxury with the comfort of nature. </p>
+                    </div>
+                    <div class="modal-footer">
+                        <label>
+                            <input
+                                type="checkbox"
+                                onclick="handleBooking()"
+                                aria-label="Agree to visit"
+                            />
+                            I agree to visit
+                        </label>
+                    </div>
                 </div>
-                <div class="modal-footer">
-                    <input type="checkbox"
-                            title="Click To Visit" onclick="myFunction()"> I am agree to visit.
-                </div>
-
             </div>
         </div>
-    </div>
 
-    <!-- Kolkata -->
-    <div class="modal fade kolkata" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <h1 style="text-align: center;">Kolkata</h1>
-                <img src="https://wallpapercave.com/wp/wp4631452.jpg" alt="">
-                <div class="img_detils" style="text-align: center;">
-                    <h4>Colva Beach, Goa, India
-                        <div className="star">
-                            <img src="https://i.ibb.co/SN5SJ8x/star.png" />
-                            <img src="https://i.ibb.co/SN5SJ8x/star.png" />
-                            <img src="https://i.ibb.co/SN5SJ8x/star.png" />
-                            <img src="https://i.ibb.co/SN5SJ8x/star.png" />
-                            <img src="https://i.ibb.co/SN5SJ8x/star.png" />
+        <!-- Agra Fort Modal -->
+        <div
+            class="modal fade"
+            id="modal-agra"
+            tabindex="-1"
+            aria-labelledby="modalAgraLabel"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title" id="modalAgraLabel">
+                            Agra Fort
+                        </h1>
+                        <button
+                            type="button"
+                            class="btn-close btn-close-white"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                        ></button>
+                    </div>
+                    <div class="modal-body">
+                        <img
+                            src="https://wallpapercave.com/wp/wp2675419.jpg"
+                            alt="Agra Fort"
+                            loading="lazy"
+                        />
+                        <div class="img_details">
+                            <h4>
+                                Agra Fort
+                                <div class="star">
+                                    <img
+                                        src="https://i.ibb.co/SN5SJ8x/star.png"
+                                        alt="star"
+                                    />
+                                    <img
+                                        src="https://i.ibb.co/SN5SJ8x/star.png"
+                                        alt="star"
+                                    />
+                                    <img
+                                        src="https://i.ibb.co/SN5SJ8x/star.png"
+                                        alt="star"
+                                    />
+                                    <img
+                                        src="https://i.ibb.co/SN5SJ8x/star.png"
+                                        alt="star"
+                                    />
+                                    <img
+                                        src="https://i.ibb.co/SN5SJ8x/star.png"
+                                        alt="star"
+                                    />
+                                </div>
+                                <br />Package: $500 (1 day and 1 night)
+                            </h4>
+                            <h5>Agra, Uttar Pradesh, India</h5>
+                            <p>
+                                Agra Fort is a historical fort in the city of
+                                Agra in India. It was the main residence of the
+                                emperors of the Mughal Dynasty until 1638, when
+                                the capital was shifted from Agra to Delhi.
+                            </p>
                         </div>
-                        <br>Package: $1000 (1 day and 1 night)</h4>
-                    <h5>Address: Colva Beach, Goa, India
-                    </h5>
-                    <p>Located on the banks of Colva Beach, completely drunk over the glories of Goa, Beleza By The Beach Resort Goa is a perfect example of luxury with the comfort of nature. </p>
-                </div>
-                <div class="modal-footer">
-                    <input type="checkbox"
-                            title="Click To Visit" onclick="myFunction()"> I am agree to visit.
+                    </div>
+                    <div class="modal-footer">
+                        <label>
+                            <input
+                                type="checkbox"
+                                onclick="handleBooking()"
+                                aria-label="Agree to visit"
+                            />
+                            I agree to visit
+                        </label>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <!-- Statue of Unity -->
-    <div class="modal fade statue" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <h1 style="text-align: center;">Statue of Unity</h1>
-                <img src="https://wallpapercave.com/wp/wp6587224.jpg" alt="">
-                <div class="img_detils" style="text-align: center;">
-                    <h4>Colva Beach, Goa, India
-                        <div className="star">
-                            <img src="https://i.ibb.co/SN5SJ8x/star.png" />
-                            <img src="https://i.ibb.co/SN5SJ8x/star.png" />
-                            <img src="https://i.ibb.co/SN5SJ8x/star.png" />
-                            <img src="https://i.ibb.co/SN5SJ8x/star.png" />
-                            <img src="https://i.ibb.co/SN5SJ8x/star.png" />
+        <!-- Kolkata Modal -->
+        <div
+            class="modal fade"
+            id="modal-kolkata"
+            tabindex="-1"
+            aria-labelledby="modalKolkataLabel"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title" id="modalKolkataLabel">
+                            Kolkata
+                        </h1>
+                        <button
+                            type="button"
+                            class="btn-close btn-close-white"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                        ></button>
+                    </div>
+                    <div class="modal-body">
+                        <img
+                            src="https://wallpapercave.com/wp/wp4631452.jpg"
+                            alt="Kolkata"
+                            loading="lazy"
+                        />
+                        <div class="img_details">
+                            <h4>
+                                Kolkata
+                                <div class="star">
+                                    <img
+                                        src="https://i.ibb.co/SN5SJ8x/star.png"
+                                        alt="star"
+                                    />
+                                    <img
+                                        src="https://i.ibb.co/SN5SJ8x/star.png"
+                                        alt="star"
+                                    />
+                                    <img
+                                        src="https://i.ibb.co/SN5SJ8x/star.png"
+                                        alt="star"
+                                    />
+                                    <img
+                                        src="https://i.ibb.co/SN5SJ8x/star.png"
+                                        alt="star"
+                                    />
+                                    <img
+                                        src="https://i.ibb.co/SN5SJ8x/star.png"
+                                        alt="star"
+                                    />
+                                </div>
+                                <br />Package: $2000 (1 day and 1 night)
+                            </h4>
+                            <h5>Kolkata, West Bengal, India</h5>
+                            <p>
+                                Kolkata is the capital of India's West Bengal
+                                state. Founded as an East India Company trading
+                                post, it was India's capital under the British
+                                Raj from 1773–1911. Today it's known for its
+                                grand colonial architecture, art galleries and
+                                cultural festivals.
+                            </p>
                         </div>
-                        <br>Package: $1000 (1 day and 1 night)</h4>
-                    <h5>Address: Colva Beach, Goa, India
-                    </h5>
-                    <p>Located on the banks of Colva Beach, completely drunk over the glories of Goa, Beleza By The Beach Resort Goa is a perfect example of luxury with the comfort of nature. </p>
+                    </div>
+                    <div class="modal-footer">
+                        <label>
+                            <input
+                                type="checkbox"
+                                onclick="handleBooking()"
+                                aria-label="Agree to visit"
+                            />
+                            I agree to visit
+                        </label>
+                    </div>
                 </div>
-                <div class="modal-footer">
-                    <input type="checkbox"
-                            title="Click To Visit" onclick="myFunction()"> I am agree to visit.
-                </div>
-
             </div>
         </div>
-    </div>
 
-    <!-- Lakshadweep -->
-    <div class="modal fade Lakshadweep" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <h1 style="text-align: center;">Lakshadweep</h1>
-                <img src="https://wallpapercave.com/wp/wp9215244.jpg" alt="">
-                <div class="img_detils" style="text-align: center;">
-                    <h4>Colva Beach, Goa, India
-                        <div className="star">
-                            <img src="https://i.ibb.co/SN5SJ8x/star.png" />
-                            <img src="https://i.ibb.co/SN5SJ8x/star.png" />
-                            <img src="https://i.ibb.co/SN5SJ8x/star.png" />
-                            <img src="https://i.ibb.co/SN5SJ8x/star.png" />
-                            <img src="https://i.ibb.co/SN5SJ8x/star.png" />
+        <!-- Statue of Unity Modal -->
+        <div
+            class="modal fade"
+            id="modal-statue"
+            tabindex="-1"
+            aria-labelledby="modalStatueLabel"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title" id="modalStatueLabel">
+                            Statue of Unity
+                        </h1>
+                        <button
+                            type="button"
+                            class="btn-close btn-close-white"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                        ></button>
+                    </div>
+                    <div class="modal-body">
+                        <img
+                            src="https://wallpapercave.com/wp/wp6587224.jpg"
+                            alt="Statue of Unity"
+                            loading="lazy"
+                        />
+                        <div class="img_details">
+                            <h4>
+                                Statue of Unity
+                                <div class="star">
+                                    <img
+                                        src="https://i.ibb.co/SN5SJ8x/star.png"
+                                        alt="star"
+                                    />
+                                    <img
+                                        src="https://i.ibb.co/SN5SJ8x/star.png"
+                                        alt="star"
+                                    />
+                                    <img
+                                        src="https://i.ibb.co/SN5SJ8x/star.png"
+                                        alt="star"
+                                    />
+                                    <img
+                                        src="https://i.ibb.co/SN5SJ8x/star.png"
+                                        alt="star"
+                                    />
+                                    <img
+                                        src="https://i.ibb.co/SN5SJ8x/star.png"
+                                        alt="star"
+                                    />
+                                </div>
+                                <br />Package: $500 (1 day and 1 night)
+                            </h4>
+                            <h5>Kevadia, Gujarat, India</h5>
+                            <p>
+                                The Statue of Unity is the world's tallest
+                                statue at 182 metres (597 ft). It depicts Indian
+                                statesman and independence activist Sardar
+                                Vallabhbhai Patel, who was the first Deputy
+                                Prime Minister and Home Minister of independent
+                                India.
+                            </p>
                         </div>
-                        <br>Package: $1000 (1 day and 1 night)</h4>
-                    <h5>Address: Colva Beach, Goa, India
-                    </h5>
-                    <p>Located on the banks of Colva Beach, completely drunk over the glories of Goa, Beleza By The Beach Resort Goa is a perfect example of luxury with the comfort of nature. </p>
+                    </div>
+                    <div class="modal-footer">
+                        <label>
+                            <input
+                                type="checkbox"
+                                onclick="handleBooking()"
+                                aria-label="Agree to visit"
+                            />
+                            I agree to visit
+                        </label>
+                    </div>
                 </div>
-                <div class="modal-footer">
-                    <input type="checkbox"
-                            title="Click To Visit" onclick="myFunction()"> I am agree to visit.
-                </div>
-
             </div>
         </div>
-    </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
-    </script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
-    </script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
-        integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous">
-    </script>
-    <script>
-        const myFunction = () => {
-            alert("Thank You for selecting this. Happy Journey.");
-        }
-    </script>
+        <!-- Lakshadweep Modal -->
+        <div
+            class="modal fade"
+            id="modal-lakshadweep"
+            tabindex="-1"
+            aria-labelledby="modalLakshadweepLabel"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title" id="modalLakshadweepLabel">
+                            Lakshadweep
+                        </h1>
+                        <button
+                            type="button"
+                            class="btn-close btn-close-white"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                        ></button>
+                    </div>
+                    <div class="modal-body">
+                        <img
+                            src="https://wallpapercave.com/wp/wp9215244.jpg"
+                            alt="Lakshadweep"
+                            loading="lazy"
+                        />
+                        <div class="img_details">
+                            <h4>
+                                Lakshadweep
+                                <div class="star">
+                                    <img
+                                        src="https://i.ibb.co/SN5SJ8x/star.png"
+                                        alt="star"
+                                    />
+                                    <img
+                                        src="https://i.ibb.co/SN5SJ8x/star.png"
+                                        alt="star"
+                                    />
+                                    <img
+                                        src="https://i.ibb.co/SN5SJ8x/star.png"
+                                        alt="star"
+                                    />
+                                    <img
+                                        src="https://i.ibb.co/SN5SJ8x/star.png"
+                                        alt="star"
+                                    />
+                                    <img
+                                        src="https://i.ibb.co/SN5SJ8x/star.png"
+                                        alt="star"
+                                    />
+                                </div>
+                                <br />Package: $2000 (1 day and 1 night)
+                            </h4>
+                            <h5>Lakshadweep Islands, India</h5>
+                            <p>
+                                Lakshadweep is a tropical archipelago of 36
+                                atolls and coral reefs in the Laccadive Sea, off
+                                the coast of Kerala, India. Known for its
+                                pristine beaches, crystal-clear waters, and
+                                vibrant marine life.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <label>
+                            <input
+                                type="checkbox"
+                                onclick="handleBooking()"
+                                aria-label="Agree to visit"
+                            />
+                            I agree to visit
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-</body>
+        <!-- Bootstrap 5 JS Bundle -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+            crossorigin="anonymous"
+        ></script>
 
+        <!-- Custom JavaScript -->
+        <script src="./js/app.js"></script>
+    </body>
 </html>
